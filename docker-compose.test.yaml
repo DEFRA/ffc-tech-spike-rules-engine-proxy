@@ -2,11 +2,11 @@
 # that test output is saved to the host
 
 services:
-  ffc-template-node:
+  ffc-tech-spike-rule-engine-proxy:
     build:
       target: development
-    image: ffc-template-node-development
-    container_name: ffc-template-node-test
+    image: ffc-tech-spike-rule-engine-proxy-development
+    container_name: ffc-tech-spike-rule-engine-proxy-test
     command: npm run test
     volumes:
       - ./app:/home/node/app

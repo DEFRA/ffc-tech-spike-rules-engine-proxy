@@ -1,0 +1,8 @@
+{{- include "ffc-helm-library.deployment" (list . "ffc-tech-spike-rule-engine-proxy.deployment") -}}
+{{- define "ffc-tech-spike-rule-engine-proxy.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "ffc-helm-library.container" (list . "ffc-tech-spike-rule-engine-proxy.container") }}
+{{- end -}}
